@@ -797,3 +797,146 @@ a {
     z-index: 1;
     width: 100%;
 }
+
+/* Pricing */
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+
+.pricing__container {
+    width: 994px;
+}
+
+.pricing__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__desc {
+    width: 709px;
+    margin-top: 24px;
+    text-align: center;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.pricing__option {
+    position: relative;
+    display: flex;
+    border-radius: 31px;
+    border: 1px solid #ff5b2e;
+    margin-top: 38px;
+}
+
+.pricing__text {
+    padding: 20px 40px;
+    color: #ff5b2e;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.option__active {
+    background: #ff5b2e;
+    color: #fff;
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pricing__sale {
+    position: absolute;
+    right: -112px;
+    bottom: 29px;
+}
+
+.pricing-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    margin-top: 56px;
+}
+
+.pricing-item {
+    padding: 30px 28px 43px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.pricing-item__cont {
+    color: #ff5b2e;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.pricing-item__care {
+    color: #3f4065;
+    margin-top: 8px;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.pricing-item__price {
+    display: inline-block;
+    color: #000958;
+    font-family: Sora;
+    margin-top: 24px;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 34px;
+}
+
+.pricing-item__cta {
+    display: block;
+    margin-top: 22px;
+    padding: 14px 65px;
+    color: #ff5b2e;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    transition: all 0.2s ease-in;
+}
+
+.pricing-item__cta:hover {
+    color: #fff;
+    background: #ff5b2e;
+}
+
+.pricing-details {
+    margin-top: 24px;
+}
+
+.pricing-details__desc {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pricing-details__desc::before {
+    content: url(../img/Check.svg);
+    margin-right: 14px;
+}
+
+.pricing-details__desc:not(:first-child) {
+    margin-top: 18px;
+}
+
+.pricing-details__desc:has(.check-none):before {
+    content: url(../img/Check-none.svg);
+}
